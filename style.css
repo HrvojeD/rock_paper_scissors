@@ -42,10 +42,16 @@ html, body {
     text-align: center;
 }
 
-#sign {
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
+#sign1 {
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+
+#sign2 {
+    width: 150px;
+    height: 150px;
+    float: left;
 }
 
 .signs > div {
@@ -58,4 +64,21 @@ html, body {
 
 #vsLbl {
     margin-top: 25%;
+}
+
+#choice {
+    height: 55px;
+    width: 65px;
+}
+
+#choices {
+    height: 100%;
+    width: 20%;
+    margin-left: 12%;
+}
+
+#firstSign {
+    height: 100%;
+    width: 80%;
+    text-align: right;
 }
