@@ -52,44 +52,49 @@ function compPlay(playersPlay) {
     function calculateScore(playersPlay, computersPlay) {
 
         if(playersPlay === 1 && computersPlay === 2) {
-            playerScore += 1;
-            playerScoreDisplay.innerText = playerScore;
+            addPointToPlayer();
 
         } else if (playersPlay === 2 && computersPlay === 3) {
-            playerScore += 1;     
-            playerScoreDisplay.innerText = playerScore;
+            addPointToPlayer();
 
         } else if (playersPlay === 2 && computersPlay === 1) {
-            computerScore += 1;
-            computerScoreDisplay.innerText = computerScore;
+            addPointToComputer();
 
         } else if (playersPlay === 3 && computersPlay === 2) {
-            computerScore += 1;
-            computerScoreDisplay.innerText = computerScore;
+            addPointToComputer();
 
         } else if (playersPlay === 1 && computersPlay === 3) {
-            computerScore += 1;
-            computerScoreDisplay.innerText = computerScore;
+            addPointToComputer();
 
         } else if (playersPlay === 3 && computersPlay === 1) {
-            playerScore += 1;
-            playerScoreDisplay.innerText = playerScore;
+            addPointToPlayer();
         }
 
         if (playerScore === 5) {
-            playerScore = 0;
-            computerScore = 0;
-            playerScoreDisplay.innerText = playerScore;
-            computerScoreDisplay.innerText = computerScore;
+            resetScores();
             alert("You Won!")
         }
 
         if (computerScore === 5) {
+            resetScores();
+            alert("Computer Won!")
+        }
+
+        function resetScores() {
             playerScore = 0;
             computerScore = 0;
             playerScoreDisplay.innerText = playerScore;
             computerScoreDisplay.innerText = computerScore;
-            alert("Computer Won!")
+        }
+
+        function addPointToPlayer() {
+            playerScore += 1;
+            playerScoreDisplay.innerText = playerScore;
+        }
+
+        function addPointToComputer() {
+            computerScore += 1;
+            computerScoreDisplay.innerText = computerScore;
         }
     }
 }
