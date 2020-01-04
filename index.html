@@ -19,33 +19,33 @@
 
                 <div class="signs">
                     <div>
-                        <img id="sign1">
+                        <img id="sign1" src="res/start.png">
 
                         <div id="firstSign">
                             <div id="choices">
-                                <img id="paper" class="choice" src="res/paper.png">
-                                <img id="rock" class="choice" src="res/rock.png">
-                                <img id="scissors" class="choice" src="res/scissors.png">
+                                <img id="paper" class="choice" src="res/paper.png" onclick = optionClick(this.id)>
+                                <img id="rock" class="choice" src="res/rock.png" onclick = optionClick(this.id)>
+                                <img id="scissors" class="choice" src="res/scissors.png" onclick = optionClick(this.id)>
                             </div>
                         </div>
                     </div>
                     
                     <div>
-                        <h1 id="vsLbl">VS</h1>
+                        <h2 id="vsLbl">VS</h2>
                     </div>
                     
                     <div>
-                        <img id="sign2">
+                        <img id="sign2" src="res/start.png">
                     </div>
                 </div>
 
                 <div>
                     <div class="scores">
-                        <h1>scorePlaceholder</h1>
+                        <h2 id="playerScore">0</h2>
                     </div>
 
                     <div class="scores">
-                        <h1>scorePlaceholder</h1>
+                        <h2 id="computerScore">0</h2>
                     </div>
                 </div>
 
